@@ -22,7 +22,7 @@ class Boxes {
                     boxUsed,
                     col
                 });
-                rect(x, y, 40, 40);
+                rect(x, y, 20, 20);
             }
         }
     }

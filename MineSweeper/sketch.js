@@ -10,6 +10,10 @@ function setup() {
 	// Initialize Global Variables
 	mines[0] = new mine();
 	game.build();
+
+	for (let i = 0; i < 98; i++) {
+		mines.push(new mine());
+	}
 }
 
 // DRAW FUNCTION - Loops @ 60FPS by default
@@ -22,11 +26,13 @@ function draw() {
 	for (let i = mines.length - 1; i >= 0; i--) {
 		mines[i].show();
 	}
+	minespot();
 }
 
-function keyPressed() {
-    if(keyPressed = 70) {
-	setup();
-        }
-    }
-	
+function minespot() {
+	for (let i = 0; i < mines.length; i++) {
+	if(mines[i].x < 40) {
+		mines[i].x = 0
+	}
+}
+}
