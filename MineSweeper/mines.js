@@ -1,6 +1,6 @@
 class mine {
     constructor() {
-    this.x = Math.floor(Math.random() * 560);
+    this.x = Math.floor(Math.random() * 600);
     this.y = Math.floor(Math.random() * 280);
     this.col = "#00F3FF";
     }
